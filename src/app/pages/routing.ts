@@ -38,6 +38,16 @@ const Routing: Routes = [
       import('../modules/user/user.module').then((m) => m.UserModule),
   },
   {
+    path: 'management/setup',
+    loadChildren: () =>
+      import('../modules/setup/setup.module').then((m) => m.SetupModule),
+  },
+  {
+    path: 'management/report',
+    loadChildren: () =>
+      import('../modules/report/report.module').then((m) => m.ReportModule),
+  },
+  {
     path: '',
     redirectTo: '/dashboard',
     pathMatch: 'full',
