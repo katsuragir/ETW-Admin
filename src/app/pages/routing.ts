@@ -12,36 +12,30 @@ const Routing: Routes = [
       import('./builder/builder.module').then((m) => m.BuilderModule),
   },
   {
-    path: 'crafted/pages/profile',
-    loadChildren: () =>
-      import('../modules/profile/profile.module').then((m) => m.ProfileModule),
-    data: { layout: 'light-sidebar' },
-  },
-  {
-    path: 'crafted/account',
+    path: 'pages/account',
     loadChildren: () =>
       import('../modules/account/account.module').then((m) => m.AccountModule),
-    data: { layout: 'dark-header' },
+
   },
   {
-    path: 'crafted/pages/wizards',
+    path: 'pages/customer',
     loadChildren: () =>
-      import('../modules/wizards/wizards.module').then((m) => m.WizardsModule),
-    data: { layout: 'light-header' },
+      import('../modules/customer/customer.module').then((m) => m.CustomerModule),
   },
   {
-    path: 'crafted/widgets',
+    path: 'pages/item',
     loadChildren: () =>
-      import('../modules/widgets-examples/widgets-examples.module').then(
-        (m) => m.WidgetsExamplesModule
-      ),
-    data: { layout: 'light-header' },
+      import('../modules/item/item.module').then((m) => m.ItemModule),
   },
   {
-    path: 'apps/chat',
+    path: 'pages/claim',
     loadChildren: () =>
-      import('../modules/apps/chat/chat.module').then((m) => m.ChatModule),
-    data: { layout: 'light-sidebar' },
+      import('../modules/claim/claim.module').then((m) => m.ClaimModule),
+  },
+  {
+    path: 'management/user',
+    loadChildren: () =>
+      import('../modules/user/user.module').then((m) => m.UserModule),
   },
   {
     path: '',

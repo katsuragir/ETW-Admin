@@ -33,5 +33,13 @@ import { SharedModule } from "../../_metronic/shared/shared.module";
     CardsModule,
     SharedModule
   ],
+  exports:[
+    ProfileComponent,
+    OverviewComponent,
+    ProjectsComponent,
+    CampaignsComponent,
+    DocumentsComponent,
+    ConnectionsComponent,
+  ]
 })
 export class ProfileModule {}

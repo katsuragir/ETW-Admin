@@ -73,10 +73,14 @@ export class LayoutService {
   constructor(private activatedRoute: ActivatedRoute) {}
 
   getProp(path: string, config?: ILayout): string | boolean | undefined | Object {
+    console.log(path);
+    console.log(config);
+    console.log(this.layoutConfigSubject.value);
     if (config) {
+      console.log(objectPath.get(config, path));
       return objectPath.get(config, path);
     }
-
+    console.log(objectPath.get(this.layoutConfigSubject.value, path))
     return objectPath.get(this.layoutConfigSubject.value, path);
   }
 
