@@ -76,7 +76,6 @@ export class LayoutService {
     if (config) {
       return objectPath.get(config, path);
     }
-
     return objectPath.get(this.layoutConfigSubject.value, path);
   }
 

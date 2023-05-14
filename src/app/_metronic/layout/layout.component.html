@@ -27,8 +27,8 @@
         <!--begin::Content wrapper-->
         <div class="d-flex flex-column flex-column-fluid">
           <ng-container *ngIf="appToolbarDisplay">
-            <app-toolbar class="app-toolbar" [ngClass]="appToolbarCSSClass" id="kt_app_toolbar"
-              [appToolbarLayout]="appToolbarLayout"></app-toolbar>
+            <!-- <app-toolbar class="app-toolbar" [ngClass]="appToolbarCSSClass" id="kt_app_toolbar"
+              [appToolbarLayout]="appToolbarLayout"></app-toolbar> -->
           </ng-container>
           <app-content id=" kt_app_content" class="app-content" [ngClass]="contentCSSClasses"
             [contentContainerCSSClass]="contentContainerCSSClass" [appContentContiner]="appContentContiner"
@@ -58,10 +58,6 @@
 <app-activity-drawer></app-activity-drawer>
 <app-messenger-drawer></app-messenger-drawer>
 <!-- end:: Drawers -->
-
-<!-- end:: Engage -->
-<app-engages></app-engages>
-<!-- end:: Engage -->
 
 <!-- begin:: Modals -->
 <app-main-modal></app-main-modal>

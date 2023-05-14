@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "demo1": {
+    "etw-admin": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/demo1",
+            "outputPath": "dist/etw-admin",
             "allowedCommonJsDependencies": [
               "object-path",
               "apexcharts",
@@ -78,10 +78,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "demo1:build:production"
+              "browserTarget": "etw-admin:build:production"
             },
             "development": {
-              "browserTarget": "demo1:build:development"
+              "browserTarget": "etw-admin:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -89,7 +89,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "demo1:build"
+            "browserTarget": "etw-admin:build"
           }
         },
         "test": {
@@ -122,7 +122,7 @@
       }
     }
   },
-  "defaultProject": "demo1",
+  "defaultProject": "etw-admin",
   "cli": {
     "defaultCollection": "@angular-eslint/schematics",
     "analytics": false
