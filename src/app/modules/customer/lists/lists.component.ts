@@ -16,13 +16,6 @@ export class ListsComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    const page = {
-      pageIndex: this.pageIndex,
-      pageSize: this.pageSize
-    }
-    this.pagesService.getCustomerList(page).subscribe((result: any) => {
-      console.log(result);
-    });
 
   }
 }
