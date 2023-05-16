@@ -8,6 +8,11 @@ import { AddComponent } from './add/add.component';
 import { EditComponent } from './edit/edit.component';
 import { DropdownMenusModule, WidgetsModule } from 'src/app/_metronic/partials';
 import { CustomerRoutingModule } from '../customer/customer-routing.module';
+import { TranslationModule } from '../i18n';
+import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgApexchartsModule } from 'ng-apexcharts';
+import { InlineSVGModule } from 'ng-inline-svg-2';
+import { SharedModule } from '@app/_metronic/shared/shared.module';
 
 
 @NgModule({
@@ -23,6 +28,11 @@ import { CustomerRoutingModule } from '../customer/customer-routing.module';
     CustomerRoutingModule,
     DropdownMenusModule,
     WidgetsModule,
+    TranslationModule,
+    InlineSVGModule,
+    NgApexchartsModule,
+    NgbDropdownModule,
+    SharedModule,
   ]
 })
 export class UserModule { }

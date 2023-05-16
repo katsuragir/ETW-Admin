@@ -26,10 +26,14 @@
 		    &.active {
 			    .page-link {
 			        border-color: var(--#{$prefix}primary-light);
-				}	
+				}
 			}
 		}
-	}		
+	}
+}
+
+.bt-dashed {
+  border-top: thin dashed #e1e3ea;
 }
 
 .page-item {
@@ -97,9 +101,9 @@
 	&:hover:not(.active):not(.offset):not(.disabled) {
 		.page-link {
 			color: var(--#{$prefix}pagination-hover-color);
-			
+
 			&.page-text {
-				background-color: transparent;	
+				background-color: transparent;
 			}
 
 			.svg-icon,
@@ -123,14 +127,14 @@
 			color: var(--#{$prefix}pagination-active-color);
 
 			&.page-text {
-				background-color: transparent;	
+				background-color: transparent;
 			}
 
 			.svg-icon,
 			i {
 				color: var(--#{$prefix}pagination-active-color);;
 			}
-				
+
 			.previous {
 				@include svg-bg-icon(arrow-start, var(--#{$prefix}pagination-active-color));
 			}

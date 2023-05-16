@@ -2,17 +2,21 @@ import {NgModule} from '@angular/core';
 import {KeeniconComponent} from './keenicon/keenicon.component';
 import {CommonModule} from "@angular/common";
 import { HttpClientModule } from '@angular/common/http';
+import { NgbdSortableHeader } from './direction/sort-table';
 
 @NgModule({
   declarations: [
-    KeeniconComponent
+    KeeniconComponent,
+
   ],
   imports: [
     CommonModule,
-    HttpClientModule
+    HttpClientModule,
+    NgbdSortableHeader
   ],
   exports: [
-    KeeniconComponent
+    KeeniconComponent,
+    NgbdSortableHeader
   ]
 })
 export class SharedModule {

@@ -100,6 +100,13 @@ export const locale = {
           ADD_MESSAGE: 'Customer has been created'
         }
       }
+    },
+    USER: {
+      TABLE: {
+        USER: 'User',
+        COMPANY: 'Company',
+        EMAIL: 'Email'
+      }
     }
   }
 };

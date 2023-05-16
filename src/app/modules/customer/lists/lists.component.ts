@@ -8,21 +8,14 @@ import { PagesService } from '@app/_metronic/shared/services/pages.service';
 })
 export class ListsComponent implements OnInit {
 
-  pageIndex: number;
-  pageSize: number;
+  pageIndex: number = 0;
+  pageSize: number = 10;
 
   constructor(
     private pagesService: PagesService
   ) {}
 
   ngOnInit(): void {
-    const page = {
-      pageIndex: this.pageIndex,
-      pageSize: this.pageSize
-    }
-    this.pagesService.getCustomerList(page).subscribe((result: any) => {
-      console.log(result);
-    });
 
   }
 }
